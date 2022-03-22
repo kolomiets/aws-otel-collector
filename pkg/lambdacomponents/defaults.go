@@ -20,6 +20,7 @@ import (
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsprometheusremotewriteexporter"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsxrayexporter"
 	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/prometheusexporter"
+	"github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaegerexporter"
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/exporter/loggingexporter"
 	"go.opentelemetry.io/collector/exporter/otlpexporter"
@@ -51,6 +52,7 @@ func Components() (
 		loggingexporter.NewFactory(),
 		otlpexporter.NewFactory(),
 		otlphttpexporter.NewFactory(),
+		jaegerexporter.NewFactory()
 	)
 	if err != nil {
 		errs = multierr.Append(errs, err)

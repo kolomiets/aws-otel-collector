@@ -7,6 +7,7 @@ require (
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsprometheusremotewriteexporter v0.47.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/awsxrayexporter v0.47.0
 	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/prometheusexporter v0.47.0
+	github.com/open-telemetry/opentelemetry-collector-contrib/exporter/jaegerexporter v0.47.0
 	github.com/stretchr/testify v1.7.1
 	go.opentelemetry.io/collector v0.47.0
 	go.uber.org/multierr v1.8.0
